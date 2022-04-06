@@ -21,13 +21,6 @@ public class BoardingPassSorterUtils {
             unsortedBoardingPassesMap.put(boardingPass.getFrom(), boardingPass);
         }
 
-        HashMap<String, String> reverseMap = new HashMap<>();
-
-        //populate the  reverse map
-        for (Map.Entry<String, String> inputMapEntry : legs.entrySet()) {
-            reverseMap.put(inputMapEntry.getValue(), inputMapEntry.getKey());
-        }
-
         //find the starting point of the trip
         String start = null;
 
